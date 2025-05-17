@@ -1,6 +1,18 @@
 <mvc:View controllerName="testwebapp.controller.View1"
-    xmlns:mvc="sap.ui.core.mvc"
-    xmlns="sap.m">
-    <Page id="page" title="{i18n>title}">
-    </Page>
+	xmlns="sap.m"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:l="sap.ui.layout">
+	<l:VerticalLayout id="_IDGenVerticalLayout1" class="sapUiContentPadding" width="100%">
+		<Label id="_IDGenLabel" text="Label A (required)" labelFor="input-a" />
+		<Input id="input-a" required="true" />
+
+		<Label id="_IDGenLabel1"
+			text="Label B (bold)"
+			labelFor="input-b"
+			design="Bold" />
+		<Input id="input-b" />
+
+		<Label id="_IDGenLabel2" text="Label C (normal)" labelFor="input-c" />
+		<Input id="input-c" />
+	</l:VerticalLayout>
 </mvc:View>
